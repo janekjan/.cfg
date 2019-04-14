@@ -86,17 +86,17 @@ layouts = [
         
     ),
     # Replace Stack with Wmii?
-    layout.Stack(
-        num_stacks=2,
-        margin = 5,
-        border_focus=BORDER_FOCUS,
-        border_normal=BORDER_NORMAL
-    ),
-    layout.Floating(
-        border_focus=BORDER_FOCUS,
-        border_normal=BORDER_NORMAL
-    )
-    # layout.Tile()
+    #layout.Stack(
+    #    num_stacks=2,
+    #    margin = 5,
+    #    border_focus=BORDER_FOCUS,
+    #    border_normal=BORDER_NORMAL
+    #),
+    #layout.Floating(
+    #    border_focus=BORDER_FOCUS,
+    #    border_normal=BORDER_NORMAL
+    #)
+    #layout.Tile()
 ]
 
 widget_defaults = dict(
