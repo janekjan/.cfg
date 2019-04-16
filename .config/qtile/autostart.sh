@@ -1,9 +1,10 @@
 #!/bin/sh
 
 setxkbmap pl
-xscreensaver -no-splash &
+# xscreensaver -no-splash &
 udiskie --no-automount --no-notify --tray &
-xfce4-power-manager &
+# xfce4-power-manager &
+mate-power-manager &
 nm-applet &
 pa-applet &
 redshift -l 52:21 &

@@ -1,0 +1,31 @@
+##Apps
+atril
+unzip unrar
+caja engrampa
+feh
+firefox
+fish-shell
+git
+gotop htop
+neofetch
+network-manager-applet
+os-prober
+redshift
+rofi
+spotify
+terminator
+thunderbird
+tmux
+udiskie
+
+##Desktop
+####qtile
+cairo cairo-devel libxcb libxcb-devel libffi libffi-devel pango pango-devel python3-gobject python3-dbus
+
+pip install xcffib cairocffi
+pip install qtile
+
+##Fonts and themes
+mononoki font
+lxappearance
+Flat-remix icons and theme
