@@ -2,6 +2,7 @@
 atril
 unzip unrar
 caja engrampa
+emacs
 feh
 firefox
 fish-shell
@@ -10,6 +11,7 @@ gotop htop
 neofetch
 network-manager-applet
 os-prober
+pm-utils
 redshift
 rofi
 spotify
