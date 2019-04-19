@@ -51,7 +51,7 @@ keys = [
     Key([mod], "space", lazy.next_layout()),
     Key([mod, "control"], "c", lazy.window.kill()),
 
-    Key([mod], "z", lazy.spawn("xscreensaver-command -lock")),
+    Key([mod], "z", lazy.spawn(os.path.expanduser("~/.config/qtile/lock.sh"))),
     Key([mod, "control"], "r", lazy.restart()),
     Key([mod, "control", "shift"], "q", lazy.shutdown()),
     Key([mod, "control", "shift"], "a", lazy.spawn("sudo pm-hibernate")), #remember about setting permisssions in visudo or polkit
