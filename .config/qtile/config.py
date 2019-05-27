@@ -20,6 +20,7 @@ mod = "mod4"
 # WALLPAPER_DIR = os.path.expanduser('~/pic/wallpaper/psych1.jpg')
 
 keys = [
+    #WINDOW CONTROLS WITHIN STACK
     # Switch between windows in current stack pane
     Key([mod], "k", lazy.layout.down()),
     Key([mod], "j", lazy.layout.up()),
@@ -27,15 +28,21 @@ keys = [
     # Move windows up or down in current stack
     Key([mod, "control"], "k", lazy.layout.shuffle_down()),
     Key([mod, "control"], "j", lazy.layout.shuffle_up()),
-    # Switch window focus to other pane(s) of stack
-    Key([mod], "Tab", lazy.layout.next()),
 
+    #WINDOW CONTROL BETWEEN STACKS
+    
     # Other windows controls
     Key([mod], "m", lazy.window.toggle_fullscreen()),
     # Key([mod], "n", lazy.window.toggle_minimize()),
     Key([mod], "v", lazy.window.toggle_floating()),
     Key([mod], "h", lazy.layout.shrink()),
     Key([mod], 'l', lazy.layout.grow()),
+    # Increase/decrease number of stacks
+    Key([mod, "control"], "h", lazy.layout.add_column()),
+    Key([mod, "control"], "l", lazy.layout.remove_column()),
+
+    # Switch window focus to other pane(s) and between stacks
+    Key([mod], "Tab", lazy.layout.next()),
     
     # Swap panes of split stack
     # Key([mod, "shift"], "Tab", lazy.layout.rotate()),
@@ -97,6 +104,12 @@ layouts = [
     #    border_normal=BORDER_NORMAL
     #)
     #layout.Tile()
+    layout.Columns(
+        margin=5,
+        num_columns=1,
+        border_focus=BORDER_FOCUS,
+        border_normal=BORDER_NORMAL
+    ),
 ]
 
 widget_defaults = dict(
