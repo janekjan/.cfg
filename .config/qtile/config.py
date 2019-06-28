@@ -104,12 +104,12 @@ layouts = [
     #    border_normal=BORDER_NORMAL
     #)
     #layout.Tile()
-    layout.Columns(
-        margin=5,
-        num_columns=1,
-        border_focus=BORDER_FOCUS,
-        border_normal=BORDER_NORMAL
-    ),
+    #layout.Columns(
+    #    margin=5,
+    #    num_columns=1,
+    #    border_focus=BORDER_FOCUS,
+    #    border_normal=BORDER_NORMAL
+    #),
 ]
 
 widget_defaults = dict(
@@ -123,16 +123,29 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.GroupBox(),
-                widget.Prompt(),
-                # widget.WindowName(),
-                widget.WindowTabs(
-                    selected = ('*','*'),
-                    separator = '|'
+                widget.GroupBox(
+                    borderwidth = 2,
+                    rounded=False,
+                    this_screen_border=BORDER_FOCUS,
+                    this_current_screen_border=BORDER_FOCUS,
                 ),
+                widget.Prompt(),
+                widget.TaskList(
+                    border=BORDER_FOCUS,
+                    unfocused_border=BORDER_NORMAL,
+                ),
+                # widget.WindowName(),
+                # widget.WindowTabs(
+                #     selected = ('*','*'),
+                #     separator = '|'
+                # ),
                 # widget.Cmus(),
-                widget.HDDBusyGraph(),
-                widget.CPUGraph(line_width=2),
+                # widget.HDDBusyGraph(),
+                widget.CPUGraph(
+                    line_width=2,
+                    graph_color=BORDER_FOCUS,
+                    border_color=BORDER_NORMAL,
+                ),
                 widget.Net(interface='wlp3s0'),
                 widget.TextBox("| Janek", name="default"),
                 widget.Systray(),
