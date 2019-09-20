@@ -1,0 +1,4 @@
+device-config:
+  - device_file: /dev/sda
+    ignore: false
+

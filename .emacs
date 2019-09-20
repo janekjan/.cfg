@@ -5,6 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (tango-dark)))
  '(display-line-numbers-type (quote relative))
+ '(doc-view-continuous t)
  '(global-display-line-numbers-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
