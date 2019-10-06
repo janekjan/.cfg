@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ -x /usr/bin/mate-power-manager ] ; then
+    sleep 1
+    mate-power-manager &
+fi
+
+while true; do
+    xsetroot -name "$( date + "%F %I:%M %p" )"
+    sleep 10
+done &
+
+exec dwm
+
