@@ -1,4 +1,8 @@
 device-config:
   - device_file: /dev/sda
     ignore: false
+  - id_uuid: 5CB9FBA570289280
+    ignore: false
+  - id_uuid: BCA0624EA0620EE8
+    ignore: false
 

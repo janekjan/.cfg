@@ -5,8 +5,22 @@ if [ -x /usr/bin/mate-power-manager ] ; then
     mate-power-manager &
 fi
 
+setxkbmap pl
+
+udiskie --no-automount --no-notify --tray &
+
+nm-applet &
+pa-applet &
+
+#In Poland
+# redshift -l 52:21 &
+#In the UK
+redshift -l 52:1 &
+
+feh --bg-fill /home/janek/pic/wallpaper/psych1.jpg &
+
 while true; do
-    xsetroot -name "$( date + "%F %I:%M %p" )"
+    xsetroot -name "$( date "+%a, %-d.%-m.%y, %-H:%M" )"
     sleep 10
 done &
 
