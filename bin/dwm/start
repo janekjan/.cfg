@@ -17,6 +17,7 @@ pa-applet &
 #In the UK
 redshift -l 52:1 &
 
+xcompmgr &
 feh --bg-fill /home/janek/pic/wallpaper/psych1.jpg &
 
 while true; do
