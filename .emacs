@@ -21,3 +21,6 @@
 ;(tool-bar-mode -1)
 (set-face-attribute 'default nil :height 90)
 (global-display-line-numbers-mode)
+
+(set-frame-parameter (selected-frame) 'alpha '(90 85))
+(add-to-list 'default-frame-alist '(alpha 90 85))
