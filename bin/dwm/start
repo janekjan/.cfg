@@ -17,7 +17,9 @@ pa-applet &
 #In the UK
 redshift -l 52:1 &
 
-xcompmgr &
+# xcompmgr &
+picom --config /home/janek/.config/picom/picom.conf
+
 feh --bg-fill /home/janek/pic/wallpaper/dean2.jpg &
 while true; do
     xsetroot -name "$( date "+%a, %-d.%-m.%y, %-H:%M" )"
