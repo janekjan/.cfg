@@ -32,6 +32,7 @@
 
 ;; (menu-bar-mode 1)
 ;; (tool-bar-mode -1)
+(setq frame-resize-pixelwise t)
 (set-face-attribute 'default nil :height 90)
 (global-display-line-numbers-mode)
 
