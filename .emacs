@@ -20,7 +20,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (haskell-mode eglot markdown-mode use-package latex-preview-pane auctex)))
+    (go-mode markdown-preview-eww haskell-mode eglot markdown-mode use-package latex-preview-pane auctex)))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 (custom-set-faces

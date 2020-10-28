@@ -18,7 +18,7 @@ pa-applet &
 redshift -l 52:1 &
 
 # xcompmgr &
-picom --config /home/janek/.config/picom/picom.conf --experimental-backends &
+# picom --config /home/janek/.config/picom/picom.conf --experimental-backends &
 
 feh --bg-fill /home/janek/pic/wallpaper/dean2.jpg &
 while true; do
