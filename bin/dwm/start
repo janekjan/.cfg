@@ -14,8 +14,12 @@ pa-applet &
 
 #In Poland
 # redshift -l 52:21 &
+
 #In the UK
 redshift -l 52:1 &
+
+# UK dual monitor
+xrandr --output LVDS1 --primary --mode 1366x768 --pos 0x1152 --rotate normal --output DP1 --off --output HDMI1 --mode 1920x1200 --pos 1366x0 --rotate left --output VGA1 --off --output VIRTUAL1 --off
 
 # xcompmgr &
 # picom --config /home/janek/.config/picom/picom.conf --experimental-backends &

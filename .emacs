@@ -49,3 +49,6 @@
   :config
   (add-to-list 'eglot-server-programs '(haskell-mode . ("ghcide" "--lsp"))))
 
+;; Javacc
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+(load "javacc-mode.el")
