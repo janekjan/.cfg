@@ -52,3 +52,9 @@
 ;; Javacc
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (load "javacc-mode.el")
+
+;; Indentation in c/cpp
+(setq tab-width 2) 
+(defvaralias 'c-basic-offset 'tab-width)
+(setq-default c-default-style "linux"
+	      c-basic-offset 2)
